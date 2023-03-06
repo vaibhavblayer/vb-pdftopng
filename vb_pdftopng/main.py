@@ -57,7 +57,7 @@ from .functions_pdf import extract_png_pdf
         is_flag = True,
         help="Shows no of pages in a pdf file"
         )
-def pdftopng(inputfile, outputfile, dpi, transparent, ranges, pages):
+def main(inputfile, outputfile, dpi, transparent, ranges, pages):
     mydict = {
             'inputfile': inputfile,
             'first_page': ranges[0],
