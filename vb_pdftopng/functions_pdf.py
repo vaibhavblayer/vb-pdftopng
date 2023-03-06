@@ -1,4 +1,7 @@
+"""
+    Some functions for pdf handlings__
 
+"""
 
 def pages_pdf(inputfile):
 

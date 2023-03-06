@@ -2,7 +2,6 @@
 import click
 import os
 import sys
-from .tex.functions_tex import create_files
 import PyPDF2
 import time
 from rich.console import Console
