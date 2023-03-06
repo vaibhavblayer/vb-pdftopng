@@ -9,9 +9,11 @@ from .functions_pdf import pages_pdf
 from .functions_pdf import extract_png_pdf
 
 
+CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
 
 @click.command(
+        context_settings=CONTEXT_SETTINGS,
         help="Converts pdf pages into pngs"
         )
 @click.option(
