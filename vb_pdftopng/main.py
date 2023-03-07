@@ -21,6 +21,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
         '--inputfile',
         type=click.Path(),
         default="./main.pdf",
+        show_default=True,
         help="Input file name"
         )
 @click.option(
@@ -28,6 +29,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
         '--outputfile',
         type=click.Path(),
         default="./main.png",
+        show_default=True,
         help="Output file name"
         )
 @click.option(
@@ -35,6 +37,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
         '--dpi',
         default=320,
         type=click.INT,
+        show_default=True,
         help="DPI -> density per inch for png"
         )
 @click.option(
@@ -42,6 +45,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
         '--transparent',
         is_flag=True,
         default=False,
+        show_default=True,
         help="Use this flag for transparent png"
         )
 @click.option(
@@ -50,6 +54,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
         nargs=2,
         default=([1, 1]),
         type=click.Tuple([int, int]),
+        show_default=True,
         help="Page range to be converted into png"
         )
 @click.option(
@@ -57,6 +62,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
         '--pages',
         default=False,
         is_flag = True,
+        show_default=True,
         help="Shows no of pages in a pdf file"
         )
 def main(inputfile, outputfile, dpi, transparent, ranges, pages):

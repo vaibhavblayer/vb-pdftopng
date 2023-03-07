@@ -1,11 +1,10 @@
 [tool.poetry]
 name = "vb-pdftopng"
-version = "0.1.5"
-description = "Added help option [-h, --help]"
+version = "0.1.6"
+description = "Added show default=True for every options"
 authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
 readme = "README.md"
 packages = [{include = "vb_pdftopng"}]
-
 
 
 
